@@ -1,6 +1,3 @@
-<div align="center">
-  <img src="./main_admin/main_admin/public/assets/logo.svg" alt="CricWar logo" width="240" />
-
   <h3>A full-stack cricket gaming and challenge platform</h3>
 
   <p>
