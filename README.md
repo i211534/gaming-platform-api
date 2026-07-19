@@ -1,4 +1,4 @@
-  <h3>A full-stack cricket gaming and challenge platform</h3>
+<h3>A full stack cricket gaming and challenge platform</h3>
 
   <p>
     CricWar connects competitive cricket gameplay with configurable challenges,
@@ -17,21 +17,21 @@
 
 ## Overview
 
-CricWar is a multi-application platform built around competitive cricket experiences. Players can track in-game currencies, browse rewards, and submit prize redemption requests. Creators and administrators can configure match scenarios, manage challenges, monitor participation, review creator requests, maintain the prize catalog, and process payouts.
+CricWar is a multi application platform built around competitive cricket experiences. Players can track in game currencies, browse rewards, and submit prize redemption requests. Creators and administrators can configure match scenarios, manage challenges, monitor participation, review creator requests, maintain the prize catalog, and process payouts.
 
-The repository brings together two responsive Next.js applications and two Node.js APIs. Shared JWT authentication connects the services, MongoDB stores platform data, Socket.IO delivers challenge activity in real time, and Amazon S3 supports media and match-situation uploads.
+The repository brings together two responsive Next.js applications and two Node.js APIs. Shared JWT authentication connects the services, MongoDB stores platform data, Socket.IO delivers challenge activity in real time, and Amazon S3 supports media and match situation uploads.
 
 ## Highlights
 
 - **Cricket challenges** — configure batting and bowling teams, player lineups, innings type, overs, target runs, wickets, entry fees, winner limits, rewards, level requirements, and expiry.
-- **Live participation** — challenge-specific Socket.IO rooms track active players and broadcast winner updates.
+- **Live participation** — challenge specific Socket.IO rooms track active players and broadcast winner updates.
 - **Player reward market** — display currency balances, browse active prizes, check redemption eligibility, and submit delivery details.
 - **Operations dashboard** — manage users, matches, challenges, creator applications, wallets, payouts, and prize inventory from a responsive interface.
 - **Cricket game services** — APIs for teams, players, matches, world tours, leaderboards, purchases, promotions, notifications, friendships, and player statistics.
-- **Media workflows** — upload challenge artwork, prize images, match-situation files, payout receipts, and spreadsheet data.
-- **Role-aware access** — credential-based NextAuth sessions, JWT-protected APIs, and endpoint-level role authorization.
+- **Media workflows** — upload challenge artwork, prize images, match situation files, payout receipts, and spreadsheet data.
+- **Role aware access** — credential based NextAuth sessions, JWT protected APIs, and endpoint level role authorization.
 - **API documentation and validation** — Swagger/OpenAPI documentation for the NestJS service and DTO validation through NestJS pipes.
-- **Delivery-ready services** — multi-stage Docker builds, standalone Next.js output, environment-based runtime configuration, and Azure Pipelines definitions.
+- **Delivery ready services** — multi stage Docker builds, standalone Next.js output, environment based runtime configuration, and Azure Pipelines definitions.
 
 ## System Architecture
 
@@ -67,13 +67,13 @@ A responsive Next.js dashboard for administrators and approved creators. It prov
 
 `player_portal/player_portal`
 
-A player-focused Next.js experience that presents account currency balances and a rewards market. Players can review available prizes and submit authenticated redemption requests with fulfilment details.
+A player focused Next.js experience that presents account currency balances and a rewards market. Players can review available prizes and submit authenticated redemption requests with fulfilment details.
 
 ### Challenge Service
 
 `service_admin/service_admin`
 
-A modular NestJS API for challenges, admin matches, participation, wallets, payouts, prizes, creator requests, spreadsheet imports, email, S3 media, and real-time challenge events.
+A modular NestJS API for challenges, admin matches, participation, wallets, payouts, prizes, creator requests, spreadsheet imports, email, S3 media, and real time challenge events.
 
 ### Cricket API
 
@@ -98,7 +98,7 @@ An Express API that powers authentication and core cricket game data, including 
 - MongoDB with Mongoose
 - REST APIs with Swagger/OpenAPI
 - Socket.IO WebSockets
-- JWT authentication and role-based authorization
+- JWT authentication and role based authorization
 - DTO validation with `class-validator` and `class-transformer`
 
 **Infrastructure and integrations**
@@ -106,7 +106,7 @@ An Express API that powers authentication and core cricket game data, including 
 - Amazon S3 for object storage and signed media access
 - Nodemailer and Handlebars for transactional email
 - Firebase Cloud Messaging support
-- Docker multi-stage builds
+- Docker multi stage builds
 - Azure Pipelines for container build and delivery
 - Jest and Supertest for unit and API testing
 
@@ -115,7 +115,7 @@ An Express API that powers authentication and core cricket game data, including 
 ```text
 Cric-war/
 ├── Backend/backend/                  # Express cricket game API
-│   ├── modules/                      # Domain-based routes, controllers, and models
+│   ├── modules/                      # Domain based routes, controllers, and models
 │   ├── middleware/                   # Authentication, security, and error handling
 │   ├── startup/                      # Database, routing, and logging bootstrap
 │   └── tests/                        # API test suites
@@ -123,7 +123,7 @@ Cric-war/
 │   ├── src/modules/                  # Feature modules
 │   ├── src/database/                 # Mongoose schemas and repositories
 │   ├── src/common/                   # Shared services, guards, and utilities
-│   └── test/                         # Unit and integration-oriented tests
+│   └── test/                         # Unit and integration oriented tests
 ├── main_admin/main_admin/            # Next.js operations dashboard
 │   └── src/                          # App routes, components, hooks, and API slices
 └── player_portal/player_portal/      # Next.js player rewards portal
@@ -204,7 +204,7 @@ NEXTAUTH_SECRET=replace_with_a_long_random_secret
 NEXTAUTH_URL=http://localhost:3001
 ```
 
-Add the optional mail, Firebase, payout, and media-size settings when enabling those integrations.
+Add the optional mail, Firebase, payout, and media size settings when enabling those integrations.
 
 ### 3. Start the platform
 
@@ -258,11 +258,11 @@ Coverage reports are available through `npm run test:coverage` in the Express AP
 
 This project demonstrates:
 
-- Designing a domain-oriented, multi-service Node.js platform
+- Designing a domain oriented, multi service Node.js platform
 - Building separate user and operations experiences with Next.js
 - Implementing authenticated workflows across multiple applications
 - Modeling cricket challenges, currencies, inventory, wallets, and payouts
-- Combining REST APIs with room-based real-time communication
+- Combining REST APIs with room based real time communication
 - Integrating cloud storage, email, notifications, and containerized delivery
 - Maintaining backend confidence through focused Jest test suites
 
