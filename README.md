@@ -15,6 +15,8 @@
   </p>
 </div>
 
+> **Note:** This is a portfolio case study. Project is closed source, proprietary company work built at Rockville Technologies, so no source code is included here.
+
 ## Overview
 
 CricWar is a multi application platform built around competitive cricket experiences. Players can track in game currencies, browse rewards, and submit prize redemption requests. Creators and administrators can configure match scenarios, manage challenges, monitor participation, review creator requests, maintain the prize catalog, and process payouts.
