@@ -23,15 +23,15 @@ The repository brings together two responsive Next.js applications and two Node.
 
 ## Highlights
 
-- **Cricket challenges** — configure batting and bowling teams, player lineups, innings type, overs, target runs, wickets, entry fees, winner limits, rewards, level requirements, and expiry.
-- **Live participation** — challenge specific Socket.IO rooms track active players and broadcast winner updates.
-- **Player reward market** — display currency balances, browse active prizes, check redemption eligibility, and submit delivery details.
-- **Operations dashboard** — manage users, matches, challenges, creator applications, wallets, payouts, and prize inventory from a responsive interface.
-- **Cricket game services** — APIs for teams, players, matches, world tours, leaderboards, purchases, promotions, notifications, friendships, and player statistics.
-- **Media workflows** — upload challenge artwork, prize images, match situation files, payout receipts, and spreadsheet data.
-- **Role aware access** — credential based NextAuth sessions, JWT protected APIs, and endpoint level role authorization.
-- **API documentation and validation** — Swagger/OpenAPI documentation for the NestJS service and DTO validation through NestJS pipes.
-- **Delivery ready services** — multi stage Docker builds, standalone Next.js output, environment based runtime configuration, and Azure Pipelines definitions.
+- **Cricket challenges:** configure batting and bowling teams, player lineups, innings type, overs, target runs, wickets, entry fees, winner limits, rewards, level requirements, and expiry.
+- **Live participation:** challenge specific Socket.IO rooms track active players and broadcast winner updates.
+- **Player reward market:** display currency balances, browse active prizes, check redemption eligibility, and submit delivery details.
+- **Operations dashboard:** manage users, matches, challenges, creator applications, wallets, payouts, and prize inventory from a responsive interface.
+- **Cricket game services:** APIs for teams, players, matches, world tours, leaderboards, purchases, promotions, notifications, friendships, and player statistics.
+- **Media workflows:** upload challenge artwork, prize images, match situation files, payout receipts, and spreadsheet data.
+- **Role aware access:** credential based NextAuth sessions, JWT protected APIs, and endpoint level role authorization.
+- **API documentation and validation:** Swagger/OpenAPI documentation for the NestJS service and DTO validation through NestJS pipes.
+- **Delivery ready services:** multi stage Docker builds, standalone Next.js output, environment based runtime configuration, and Azure Pipelines definitions.
 
 ## System Architecture
 
@@ -154,7 +154,7 @@ cd ../../player_portal/player_portal && npm install
 
 Create a `.env` file inside each application that you plan to run.
 
-**Cricket API — `Backend/backend/.env`**
+**Cricket API: `Backend/backend/.env`**
 
 ```dotenv
 PORT=5000
@@ -166,7 +166,7 @@ S3_BUCKET_REGION=
 S3_BUCKET_NAME=
 ```
 
-**Challenge service — `service_admin/service_admin/.env`**
+**Challenge service: `service_admin/service_admin/.env`**
 
 ```dotenv
 NODE_ENV=development
@@ -184,7 +184,7 @@ S3_BUCKET_REGION=
 S3_BUCKET_NAME=
 ```
 
-**Operations dashboard — `main_admin/main_admin/.env.local`**
+**Operations dashboard: `main_admin/main_admin/.env.local`**
 
 ```dotenv
 API_URL=http://localhost:3002/api/v1
@@ -194,7 +194,7 @@ NEXTAUTH_SECRET=replace_with_a_long_random_secret
 NEXTAUTH_URL=http://localhost:3000
 ```
 
-**Player portal — `player_portal/player_portal/.env.local`**
+**Player portal: `player_portal/player_portal/.env.local`**
 
 ```dotenv
 API_URL=http://localhost:3002/api/v1
@@ -211,25 +211,25 @@ Add the optional mail, Firebase, payout, and media size settings when enabling t
 Open a terminal for each service:
 
 ```bash
-# Cricket API — http://localhost:5000
+# Cricket API: http://localhost:5000
 cd Backend/backend
 npm run watch
 ```
 
 ```bash
-# Challenge service — http://localhost:3002
+# Challenge service: http://localhost:3002
 cd service_admin/service_admin
 npm run start:dev
 ```
 
 ```bash
-# Operations dashboard — http://localhost:3000
+# Operations dashboard: http://localhost:3000
 cd main_admin/main_admin
 npm run dev
 ```
 
 ```bash
-# Player portal — http://localhost:3001
+# Player portal: http://localhost:3001
 cd player_portal/player_portal
 npx next dev -p 3001
 ```
@@ -269,5 +269,5 @@ This project demonstrates:
 ---
 
 <div align="center">
-  Built for competitive cricket experiences—from match scenarios to rewards.
+  Built for competitive cricket experiences, from match scenarios to rewards.
 </div>
